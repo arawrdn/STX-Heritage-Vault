@@ -12,7 +12,6 @@ A decentralized "Dead Man's Switch" for the Bitcoin ecosystem. Heritage Vault en
 ### Prerequisites
 - Node.js & NPM
 - [Clarinet](https://github.com/hirosystems/clarinet) (for Clarity testing)
-- Reown Project ID: `180a7164cfa9e5388daf1160841f65a0`
 
 ### Installation
 ```bash
