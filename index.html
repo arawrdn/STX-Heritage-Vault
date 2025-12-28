@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STX Heritage Vault</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background: #1a1625; color: #e2e8f0; font-family: 'Georgia', serif; }
+        .heritage-card { 
+            background: rgba(45, 34, 71, 0.9); 
+            border: 2px solid #a78bfa; 
+            box-shadow: 0 0 20px rgba(167, 139, 250, 0.2);
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-6">
+    <div class="heritage-card p-10 rounded-lg max-w-md w-full text-center">
+        <h1 class="text-3xl font-bold text-violet-400 mb-2 uppercase tracking-widest">Heritage Vault</h1>
+        <p class="text-sm text-violet-200/60 mb-8 italic italic">"Preserving wealth across generations on Base"</p>
+
+        <div class="mb-8">
+            <appkit-button></appkit-button>
+        </div>
+
+        <div id="vault-ui" class="hidden space-y-6">
+            <div class="p-4 bg-black/30 rounded border border-violet-900/50">
+                <span class="text-xs uppercase text-violet-300">Vault Holdings</span>
+                <h2 id="balance" class="text-2xl font-mono text-white">0.00 ETH</h2>
+            </div>
+
+            <input type="number" id="amount" placeholder="Amount in ETH" 
+                   class="w-full bg-transparent border-b border-violet-500 p-2 text-center focus:outline-none text-xl">
+
+            <div class="flex gap-4">
+                <button id="deposit-btn" class="flex-1 bg-violet-600 hover:bg-violet-700 py-3 rounded font-bold transition-all">DEPOSIT</button>
+                <button id="withdraw-btn" class="flex-1 border border-violet-500 hover:bg-violet-500/10 py-3 rounded font-bold transition-all">WITHDRAW</button>
+            </div>
+        </div>
+
+        <p id="info" class="mt-6 text-xs text-violet-400/50"></p>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
