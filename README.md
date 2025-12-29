@@ -1,18 +1,60 @@
-# Heritage Vault (Stacks/Bitcoin L2)
+# STX Heritage Vault
 
-A decentralized "Dead Man's Switch" for the Bitcoin ecosystem. Heritage Vault ensures your digital assets aren't lost forever if you lose access to your wallet or pass away.
+STX Heritage Vault is a decentralized platform built on the Stacks (STX) blockchain designed to secure, document, and preserve digital cultural heritage. The project leverages blockchain transparency and permanent storage to ensure historical data remains immutable and accessible.
 
-## Features
-- **Non-Custodial**: You retain control. Only the smart contract can move funds, and only if you stop checking in.
-- **Time-Locked Recovery**: Uses Stacks `block-height` for immutable timing.
-- **AppKit Integration**: Seamlessly connect Xverse, Leather, or use Social Login (via Reown WalletKit) for heirs.
+## Key Features
 
-## Technical Setup
+* **Secure Archiving:** Store heritage metadata on-chain using Clarity Smart Contracts.
+* **Decentralized Governance:** Voting mechanisms for approving new heritage entries via the VoteManager contract.
+* **Contribution Rewards:** Issuance of Soulbound Tokens (SBT) to active contributors through the SBTReward contract.
+* **Multi-Wallet Support:** Seamless integration with Hiro, Xverse, and WalletConnect.
 
-### Prerequisites
-- Node.js & NPM
-- [Clarinet](https://github.com/hirosystems/clarinet) (for Clarity testing)
+## Tech Stack
 
-### Installation
-```bash
-npm install @reown/appkit @reown/appkit-adapter-stacks @stacks/connect
+* **Smart Contracts:** Clarity (Stacks Blockchain)
+* **Frontend:** React.js / Vite
+* **Blockchain Interaction:** @stacks/connect, @stacks/transactions
+* **Wallet Integration:** WalletConnect v2
+* **Storage:** IPFS (via Pinata or Web3.Storage)
+
+## Prerequisites
+
+Before starting, ensure you have the following installed:
+* Clarinet (for smart contract development and testing)
+* Node.js v18 or higher
+* Hiro Wallet or Xverse Wallet browser extension
+
+## Installation and Local Development
+
+1.  **Clone the Repository**
+    ```bash
+    git clone [https://github.com/arawrdn/STX-Heritage-Vault.git](https://github.com/arawrdn/STX-Heritage-Vault.git)
+    cd STX-Heritage-Vault
+    ```
+
+2.  **Install Dependencies**
+    ```bash
+    npm install
+    ```
+
+3.  **Environment Configuration**
+    Create a `.env` file in the root directory and add the following parameters:
+    ```env
+
+4.  **Run the Application**
+    ```bash
+    npm run dev
+    ```
+
+## Contributing
+
+Contributions are welcome. Please follow these steps:
+1. Fork the project.
+2. Create a feature branch (`git checkout -b feature/NewFeature`).
+3. Commit your changes (`git commit -m 'Add NewFeature'`).
+4. Push to the branch (`git push origin feature/NewFeature`).
+5. Open a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
