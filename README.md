@@ -24,6 +24,17 @@ Before starting, ensure you have the following installed:
 * Node.js v18 or higher
 * Hiro Wallet or Xverse Wallet browser extension
 
+## Roadmap
+
+The STX Heritage Vault aims to grow in key phases:
+
+1. **Smart Contract Audits** – Strengthen security and reliability.
+2. **UI/UX Improvements** – More intuitive heritage submission and dashboard.
+3. **Multi-Chain Bridges** – Interoperability with Bitcoin layer-2 and other ecosystems.
+4. **Community Curators** – DAO-style governance for content curation.
+5. **Analytics Dashboard** – Visualization of heritage records & activity.
+
+
 ## Installation and Local Development
 
 1.  **Clone the Repository**
